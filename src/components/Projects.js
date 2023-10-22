@@ -66,22 +66,7 @@ const Projects = () => {
             title: "Platform Akademik Sekolah",
             description: "WEB Application & Landing Page",
             imgUrl: school,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
-        },
+        }
     ];
 
     return (
@@ -93,7 +78,7 @@ const Projects = () => {
                         {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, accusamus nostrum nihil dicta non incidunt quos!.</p>
+                        <p>I have experience in several application projects, both as a team and individually. Here are some of the projects that I have worked on:</p>
                         </div>}
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">

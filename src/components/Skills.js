@@ -37,7 +37,7 @@ const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim saepe sed praesentium ducimus eveniet non excepturi! Tempore.</p>
+                            <p>I have mastered several skills, including :</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 <div className='item'>
                                     <img src={meter2} alt="Image" />
