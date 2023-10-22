@@ -1,0 +1,147 @@
+import React from "react";
+import { Col, Container,Nav, Row, Tab } from "react-bootstrap";
+import ProjectCard from "./ProjectCard";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../assets/img/project-img1.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
+import rcma from "../assets/img/rcma.png";
+import tkb from "../assets/img/tkb.png";
+import docman from "../assets/img/docman.png";
+import ticket from "../assets/img/ticket.png";
+import LMSCorp from "../assets/img/lms-corporate.png";
+import eFlight from "../assets/img/e-flight.png";
+import carRental from "../assets/img/car-rental.png";
+import olshop from "../assets/img/olshop.png";
+import school from "../assets/img/school.png";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
+const Projects = () => {
+    const projects = [
+        {
+            title: "Learning Management System",
+            description: "LMS & WEB Application",
+            imgUrl: LMSCorp,
+        },
+        {
+            title: "Risk Culture Maturity Assessment",
+            description: "WEB Application",
+            imgUrl: rcma,
+        },
+        {
+            title: "Aplikasi Tingkat Kesehatan",
+            description: "WEB Application",
+            imgUrl: tkb,
+        },
+        {
+            title: "Support Ticketing",
+            description: "WEB Application",
+            imgUrl: ticket,
+        },
+        {
+            title: "E-Flight Ticket Platform",
+            description: "WEB Application",
+            imgUrl: eFlight,
+        },
+        {
+            title: "Document Management",
+            description: "WEB Application",
+            imgUrl: docman,
+        },
+    ];
+
+    const projects2 = [
+        {
+            title: "Car Rental Platform",
+            description: "WEB Application & Landing Page",
+            imgUrl: carRental,
+        },
+        {
+            title: "Online Shop",
+            description: "Platform & WEB Application",
+            imgUrl: olshop,
+        },
+        {
+            title: "Platform Akademik Sekolah",
+            description: "WEB Application & Landing Page",
+            imgUrl: school,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+        },
+    ];
+
+    return (
+        <section className="project" id="project">
+            <Container>
+                <Row>
+                    <Col>
+                    <TrackVisibility>
+                        {({ isVisible }) => 
+                        <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                        <h2>Projects</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, accusamus nostrum nihil dicta non incidunt quos!.</p>
+                        </div>}
+                        </TrackVisibility>
+                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                            <Nav.Item>
+                                <Nav.Link eventKey="first">Team</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="second">Individual</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                        <Tab.Content>
+                            <Tab.Pane eventKey="first">
+                                <Row>
+                                    {
+                                        projects.map((project, index) => {
+                                            return (
+                                                <ProjectCard 
+                                                    key={index}
+                                                    {...project}
+                                                />
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                    {
+                                        projects2.map((project, index) => {
+                                            return (
+                                                <ProjectCard 
+                                                    key={index}
+                                                    {...project}
+                                                />
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
+                        </Tab.Content>
+                        </Tab.Container>
+                    </Col>
+                </Row>
+            </Container>
+            <img className="background-image-right" src={colorSharp2} />
+        </section>
+    )
+}
+
+export default Projects;
