@@ -11,6 +11,7 @@ import docman from "../assets/img/docman.png";
 import ticket from "../assets/img/ticket.png";
 import LMSCorp from "../assets/img/lms-corporate.png";
 import eFlight from "../assets/img/e-flight.png";
+import rba from "../assets/img/rba.png";
 import carRental from "../assets/img/car-rental.png";
 import olshop from "../assets/img/olshop.png";
 import school from "../assets/img/school.png";
@@ -22,49 +23,64 @@ const Projects = () => {
         {
             title: "Learning Management System",
             description: "LMS & WEB Application",
+            categories: "Team",
             imgUrl: LMSCorp,
         },
         {
             title: "Risk Culture Maturity Assessment",
             description: "WEB Application",
+            categories: "Team",
             imgUrl: rcma,
         },
         {
             title: "Aplikasi Tingkat Kesehatan",
             description: "WEB Application",
+            categories: "Team",
             imgUrl: tkb,
         },
         {
             title: "Support Ticketing",
             description: "WEB Application",
+            categories: "Team",
             imgUrl: ticket,
         },
         {
             title: "E-Flight Ticket Platform",
             description: "WEB Application",
+            categories: "Team",
             imgUrl: eFlight,
         },
         {
             title: "Document Management",
             description: "WEB Application",
+            categories: "Team",
             imgUrl: docman,
         },
     ];
 
     const projects2 = [
         {
+            title: "Risk Based Audit",
+            description: "WEB Application",
+            categories: "Team",
+            imgUrl: rba,
+        },
+        {
             title: "Car Rental Platform",
             description: "WEB Application & Landing Page",
+            categories: "Individual",
             imgUrl: carRental,
         },
         {
             title: "Online Shop",
             description: "Platform & WEB Application",
+            categories: "Individual",
             imgUrl: olshop,
         },
         {
             title: "Platform Akademik Sekolah",
             description: "WEB Application & Landing Page",
+            categories: "Individual",
             imgUrl: school,
         }
     ];
@@ -84,10 +100,10 @@ const Projects = () => {
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Team</Nav.Link>
+                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Individual</Nav.Link>
+                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>

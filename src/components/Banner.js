@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { Button, Container, Col, Modal, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
-import peopleImg from '../assets/img/ikal.png';
+// import peopleImg from '../assets/img/haikal.png';
+import peopleImg from '../assets/img/aku.JPG';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -66,8 +67,8 @@ const Banner = () => {
                         </div>}
                         </TrackVisibility>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={peopleImg} alt="Headder Img" />
+                    <Col md={6} xl={5} className="d-none d-md-block">
+                        <img src={peopleImg} className="rounded-circle" alt="Headder Img" />
                     </Col>
                 </Row>
             </Container>
