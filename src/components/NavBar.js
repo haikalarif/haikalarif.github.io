@@ -51,8 +51,8 @@ const NavBar = () => {
                         <Nav.Link href="#skill" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
-                    <span className="navbar-text">
-                        <div className="social-icon">
+                    <span className="navbar-text d-flex justify-content-center">
+                        <div className="social-icon d-none d-lg-block">
                             <a href="https://www.linkedin.com/in/haikal-arif-45456b1ab" target="_blank"><img src={navIcon1} alt="" /></a>
                             <a href="https://github.com/haikalarif" target="_blank"><img src={navIcon4} alt="" /></a>
                             <a href="https://www.instagram.com/ikalarif" target="_blank"><img src={navIcon3} alt="" /></a>
@@ -69,7 +69,7 @@ const NavBar = () => {
             <Modal.Body className='text-dark'>
                 <p><b>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : haikal@gmail.com</p>
                 <p><b>No. Handphone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : +62 821 1234 5678</p>
-                <p><b>Instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : @ikalarif</p>
+                <p><b>Instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : <a href="https://www.instagram.com/ikalarif" target="_blank">@ikalarif</a></p>
                 <p><b>Github &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : <a href="https://github.com/haikalarif" target="_blank">haikalarif</a></p>
                 <p><b>Linkedin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> : <a href="https://www.linkedin.com/in/haikal-arif-45456b1ab" target="_blank">Haikal Arif</a></p>
             </Modal.Body>
